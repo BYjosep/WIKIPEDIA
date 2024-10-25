@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    width: 400px; /* Ajusta el ancho según tus necesidades */
+    padding: 20px;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc; /* Agrega un borde inferior para separar los elementos */
+}
+li img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.value {
+    margin-left: auto;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Chrome & Safari */
+input::-ms-checkmark {
+  display: none;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+:root {
+    --switch-size: 50px;
+    --switch-color: #2196F3;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: var(--switch-size);
+    height: calc(var(--switch-size) / 2);
+    /* ... resto del código del switch ... */
+}
+
+.slider {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Agrega una sombra para destacar */
+}
+
+@media (max-width: 768px) {
+    main {
+        width: 100%;
+    }
+}
+
+:root {
+    --primary-color: #2196F3;
+    --background-color: #f0f0f0;
+}
+
+/* Tema oscuro (ejemplo) */
+.dark-theme {
+    --primary-color: #333;
+    --background-color: #222;
+}
+
+/* Pie de página */
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .location-button,
+  .settings-button {
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Ajusta el tamaño de las imágenes según tus necesidades */
+  .location-button img,
+  .settings-button img {
+    width: 20px;
+    height: 20px;
+  }
