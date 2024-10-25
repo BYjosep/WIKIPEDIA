@@ -1,0 +1,40 @@
+/* Suponiendo que tienes un archivo CSS llamado styles.css para toda tu página */
+
+/*Estilos de la página de inicio (adaptados para la página de resultados)*/
+ body {
+  font-family: "Montserrat", sans-serif; /* Fuente utilizada en la página de inicio */
+  background-color: #fff; /* Color de fondo de la página de inicio */
+  color: #333; /* Color de texto principal */
+}
+
+.result {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Estilos específicos para la página de resultados */
+.results-page {
+  /* Estilos adicionales para la página de resultados */
+  padding-top: 50px;
+}
+
+.no-results {
+  text-align: center;
+  color: #888;
+  font-size: 18px;
+}
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Para centrar verticalmente también*/
+  height: 100vh; /* Ocupa toda la altura de la viewport*/
+}
+
+.elemento-a-centrar {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
