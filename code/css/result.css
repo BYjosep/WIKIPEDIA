@@ -51,9 +51,9 @@ body {
 }
 
 /* Sección de imagen */
-.image-section img,
-.map-section img {
+.image-section img {
     width: 100%;
+    max-width: 300px; /* Tamaño máximo para la imagen */
     border-radius: 8px;
     margin-bottom: 15px;
 }
@@ -70,7 +70,11 @@ body {
     text-decoration: none;
 }
 
-/* Enlace del mapa */
+/* Mini-mapa */
 .map-section {
     margin-top: 10px;
+}
+
+.map-section iframe {
+    border-radius: 8px;
 }
