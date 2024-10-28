@@ -3,29 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ubicación no encontrada</title>
+    <title>Resultado No Encontrado</title>
     <link rel="stylesheet" href="../css/not_found.css" />
   </head>
   <body>
-    <header>
-      <a href="../home.html">← Volver</a>
-      <form>
-        <input type="text" placeholder="Buscar ubicación" value="Bar Manolo" />
-        <button type="submit">Buscar</button>
-      </form>
-    </header>
-    <main>
-      <h1>¡Ups! No encontramos esa ubicación</h1>
-      <p>
-        Parece que no hemos podido encontrar el lugar que buscas. ¿Por qué no
-        intentas con:
-      </p>
-      <ul>
-        <li>Buscar por otro nombre</li>
-        <li>Utilizar palabras clave diferentes</li>
-        <li>Revisar tu ortografía</li>
-      </ul>
-      <a href="../home.html" class="btn">Volver a la página principal</a>
-    </main>
+    <div class="container">
+      <!-- Encabezado de búsqueda -->
+      <header class="search-header">
+        <button class="back-button" onclick="location.href='./home.html'">
+          ⬅️
+        </button>
+        <div class="search-bar">
+          <input type="text" placeholder="Buscar" value="Bar manolo" />
+          <button onclick="location.href='./search.html'">🔍</button>
+        </div>
+      </header>
+
+      <!-- Contenido de error -->
+      <div class="not-found-content">
+        <h2>Course not found</h2>
+        <p>Try searching the course with a different keyword</p>
+      </div>
+    </div>
   </body>
 </html>

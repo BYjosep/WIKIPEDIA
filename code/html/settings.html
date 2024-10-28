@@ -1,60 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Settings</title>
-    <link rel="stylesheet" href="../css/settings.css">
-</head>
-<body>
-    <header>
-        
-        <h1>settings</h1>
-    </header>
-    <main>
-        <img src="../img/retrato-hermosa-mujer-20-anos-sonriente.png" alt="Perfil" class="profile-image">
-        <ul>
-            <li>
-                <img src="notification.svg" alt="Notificaciones">
-                <span>Notificaciones</span>
-                <span class="value">
-                    <label class="switch">
-                        <input type="checkbox">
-                        <span class="slider round"></span>
-                    </label>
-                </span>
-                
-            </li>
-            <li>
-                <img src="user.svg" alt="Usuario">
-                <span>Nombre</span>
-                <span class="value">María Rocío Frutos</span>
-            </li>
-            <li>
-                <img src="email.svg" alt="Email">
-                <span>Email</span>
-                <span class="value">maria.rocio.f@gmail.com</span>
-            </li>
-            <li>
-                <img src="lock.svg" alt="Contraseña">
-                <span>Contraseña</span>
-                <span class="value">changed 2 weeks ago</span>
-            </li>
-        </ul>
-    </main>
-    <footer>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajustes</title>
+    <link rel="stylesheet" href="../css/settings.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Encabezado -->
+      <header class="header">
         <a href="./home.html">
-            <button class="location-button">
-                <img src="../img/ubicacion_settings.png" alt="Ubicación">
-                Ubicación
-            </button>
+          <button class="back-button">⬅️</button>
         </a>
-        <a href="#">
-            <button class="settings-button">
-                <img src="../img/ajustes_settings.png" alt="Ajustes">
-                Ajustes
-            </button>
-        </a>
-    </footer>
-</body>
+        <h1>Ajustes</h1>
+      </header>
+
+      <!-- Imagen central -->
+      <div class="image-section">
+        <img
+          src="../img/retrato-hermosa-mujer-20-anos-sonriente.png"
+          alt="Imagen de usuario"
+        />
+      </div>
+
+      <!-- Sección de notificaciones -->
+      <div class="section">
+        <div class="option">
+          <span class="icon">🔔</span>
+          <span>Notificaciones</span>
+          <label class="switch">
+            <input type="checkbox" checked />
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Información de la cuenta -->
+      <div class="section">
+        <h2>Información de la cuenta</h2>
+        <div class="option">
+          <span class="icon">👤</span>
+          <div>
+            <p>Nombre</p>
+            <span>Maria Rocio Frutos</span>
+          </div>
+          <span class="arrow">→</span>
+        </div>
+        <div class="option">
+          <span class="icon">📧</span>
+          <div>
+            <p>Email</p>
+            <span>juanita123@gmail.com</span>
+          </div>
+          <span class="arrow">→</span>
+        </div>
+        <div class="option">
+          <span class="icon">🔒</span>
+          <div>
+            <p>Contraseña</p>
+            <span>changed 2 weeks ago</span>
+          </div>
+          <span class="arrow">→</span>
+        </div>
+      </div>
+
+      <!-- Menú de navegación -->
+      <footer class="footer">
+        <div class="nav-item">
+          <a href="./home.html">
+            <span>📍</span>
+            <p>Ubicación</p>
+          </a>
+        </div>
+        <div class="nav-item active">
+          <span>⚙️</span>
+          <p>Ajustes</p>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>

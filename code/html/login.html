@@ -3,35 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Iniciar Sesión</title>
+    <title>Login</title>
     <link rel="stylesheet" href="../css/login.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>Iniciar Sesión</h1>
-      <p>Iniciar sesión con redes sociales</p>
-      <div class="social-buttons">
-
-       <a href="https://www.facebook.com/josepvicent.mestrellobell">
-        <button class="social-button facebook">Facebook</button>
-       </a>
-
-        <a href="https://www.instagram.com/byjosep04/">
-          <button class="social-button instagram">Instagram</button>
-        </a>
-
-        <a href="https://x.com/BYjosep04">
-          <button class="social-button x">x</button>
-        </a>
-
+    <div class="login-container">
+      <!-- Imagen de usuario o decoración -->
+      <div class="illustration">
+        <img
+          src="../img/retrato-hermosa-mujer-20-anos-sonriente.png"
+          alt="Ilustración de usuario"
+        />
       </div>
-      <form action="home.html" method="get">
-        <input type="email" placeholder="Correo electrónico" required />
-        <input type="password" placeholder="Contraseña" required />
-        <a href="#">¿Olvidaste tu contraseña?</a>
-        <a href="./home.html"><button type="submit">Iniciar Sesión</button></a>
+
+      <!-- Título del formulario de inicio de sesión -->
+      <h2>Log in</h2>
+
+      <!-- Texto de inicio de sesión con redes sociales -->
+      <p class="social-login-text">Login with social networks</p>
+
+      <!-- Enlaces a redes sociales -->
+      <div class="social-buttons">
+        <a
+          href="https://www.facebook.com/josepvicent.mestrellobell"
+          target="_blank"
+          class="social-btn facebook"
+          >f</a
+        >
+        <a
+          href="https://www.instagram.com/byjosep04"
+          target="_blank"
+          class="social-btn instagram"
+          >📸</a
+        >
+        <a
+          href="https://twitter.com/BYjosep04"
+          target="_blank"
+          class="social-btn twitter"
+          >X</a
+        >
+      </div>
+
+      <!-- Formulario de inicio de sesión -->
+      <form class="login-form" action="./home.html" method="GET">
+        <input type="email" placeholder="Email" required />
+        <div class="password-container">
+          <input type="password" placeholder="Password" required />
+          <span class="show-password">👁️</span>
+        </div>
+        <a href="./not_found.html" class="forgot-password">Forgot Password?</a>
+        <button type="submit" class="login-button">Log in</button>
       </form>
-      <p>¿No tienes una cuenta? <a href="./signup.html">Regístrate</a></p>
+
+      <!-- Enlace para registrarse -->
+      <a href="./signup.html" class="signup-link">Sign up</a>
     </div>
   </body>
 </html>

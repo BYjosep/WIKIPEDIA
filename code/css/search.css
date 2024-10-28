@@ -1,40 +1,83 @@
-/* Suponiendo que tienes un archivo CSS llamado styles.css para toda tu página */
-
-/*Estilos de la página de inicio (adaptados para la página de resultados)*/
- body {
-  font-family: "Montserrat", sans-serif; /* Fuente utilizada en la página de inicio */
-  background-color: #fff; /* Color de fondo de la página de inicio */
-  color: #333; /* Color de texto principal */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-.result {
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 16px;
   background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  padding: 20px;
-  margin-bottom: 20px;
 }
 
-/* Estilos específicos para la página de resultados */
-.results-page {
-  /* Estilos adicionales para la página de resultados */
-  padding-top: 50px;
-}
-
-.no-results {
-  text-align: center;
-  color: #888;
-  font-size: 18px;
-}
-.contenedor {
+.search-header {
   display: flex;
-  justify-content: center;
-  align-items: center; /* Para centrar verticalmente también*/
-  height: 100vh; /* Ocupa toda la altura de la viewport*/
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
 }
 
-.elemento-a-centrar {
-  background-color: #f0f0f0;
-  padding: 20px;
-  border: 1px solid #ccc;
+.back-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: none;
+  padding-left: 8px;
+}
+
+.search-bar button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.search-results {
+  display: grid;
+  gap: 16px;
+}
+
+.result-item {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: #f9f9f9;
+}
+
+.result-item img {
+  width: 100%;
+  height: auto;
+}
+
+.result-item p {
+  padding: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
 }
