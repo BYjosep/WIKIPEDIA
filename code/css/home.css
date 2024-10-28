@@ -30,11 +30,16 @@
 }
 
 .profile-icon {
+<<<<<<< HEAD
   width: 50px;              /* Ajusta el tamaño según tus preferencias */
   height: 50px;
   border-radius: 50%;       /* Hace que la imagen sea circular */
   object-fit: cover;        /* Asegura que la imagen se recorte bien en el contenedor */
   margin-top: 10px;         /* Ajusta el espacio según necesites */
+=======
+  font-size: 24px;
+  color: #555;
+>>>>>>> 04ca5fa4b967220b77610fe7fcf86dbc4b6c12b8
 }
 
 .search-bar {
