@@ -2,100 +2,92 @@
 
 /* Estilos generales */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
 }
 
 .signup-container {
-    width: 90%;
-    max-width: 320px;
-    text-align: center;
+  width: 90%;
+  max-width: 320px;
+  text-align: center;
 }
 
 /* Botón de regreso */
 .back-button {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    font-size: 1.5em;
-    color: #333;
-    cursor: pointer;
-}
-
-/* Ilustración */
-.illustration img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 20px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 1.5em;
+  color: #333;
+  cursor: pointer;
 }
 
 /* Título de registro */
 h2 {
-    font-size: 1.5em;
-    margin-bottom: 5px;
-    color: #333;
+  font-size: 1.5em;
+  margin-bottom: 5px;
+  color: #333;
 }
 
 .subtitle {
-    color: #666;
-    font-size: 0.9em;
-    margin-bottom: 20px;
+  color: #666;
+  font-size: 0.9em;
+  margin-bottom: 20px;
 }
 
 /* Formulario de registro */
 .signup-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .signup-form input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1em;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
 }
 
 /* Contenedor de la contraseña con ícono */
 .password-container {
-    position: relative;
+  position: relative;
 }
 
 .password-container input {
-    width: 100%;
-    padding-right: 40px; /* Espacio para el ícono de visibilidad */
+  width: 100%;
+  padding-right: 40px; /* Espacio para el ícono de visibilidad */
 }
 
 .show-password {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 1.2em;
-    cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2em;
+  cursor: pointer;
 }
 
 /* Botón de registro */
 .signup-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #ff5722;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 1em;
-    cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  background-color: #ff5722;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
 }
